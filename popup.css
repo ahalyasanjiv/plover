@@ -1,10 +1,17 @@
+#container {
+  width:500px;
+  height:300px;
+}
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 button{
    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
+    font-size: 12px;
+}
+input {
+  float:left;
 }
 #status {
   /* avoid an excessively wide status text */
