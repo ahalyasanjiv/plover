@@ -9,8 +9,8 @@
     <title>Plover</title>
     <link rel="stylesheet" type="popup.css" href="popup.css">
     
-    <script type="text/javascript" src="js/jQuery.js"></script>
-    <script src="js/popup.js"></script>
+    <script type="text/javascript" src="jQuery.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
     
   </head>
   <body>
@@ -34,20 +34,6 @@
 
   <br>
    <form action="" method="post"><button class="newGoal">New Goal</button> </form>
-   <script>
-jQuery('button.newGoal').click(function(event) {
-  event.preventDefault();
-  var obj = document.getElementById("newObjective").value;
-  var ded = document.getElementById("newDeadline").value;
-  if(obj == "" || ded == "") {
-    alert("Objective text field is empty");
-  } else {
-    var newRow = jQuery('<tr><td>'+obj+'</td><td>'+ded+'</td></tr>');
-    jQuery('table.objectTable').append(newRow);
-    console.log("carried out");
-  }
-});
-   </script>
   <br>
   <br>
   <p>Current Objectives: </p>
