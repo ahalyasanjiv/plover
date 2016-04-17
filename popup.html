@@ -8,9 +8,9 @@
   <head>
     <title>Plover</title>
     <link rel="stylesheet" type="popup.css" href="popup.css">
-    <script src="js/popup.js"></script>
+    
     <script type="text/javascript" src="js/jQuery.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/popup.js"></script>
     
   </head>
   <body>
@@ -25,8 +25,8 @@
   
     <tr>
       <form>
-      <td> <input type="text" name="newObjective" placeholder="New Objective"> </td>
-      <td> <input type="text" name="newDeadline" placeholder="Deadline"> </td> 
+      <td> <input type="text" id="newObjective" placeholder="New Objective"> </td>
+      <td> <input type="text" id="newDeadline" placeholder="Deadline"> </td> 
       </form>
       <td> </td>
     </tr>
@@ -34,6 +34,24 @@
 
   <br>
    <form action="" method="post"><button class="newGoal">New Goal</button> </form>
+   <script>
+    var counter = 1;
+jQuery('button.newGoal').click(function(event) {
+  event.preventDefault();
+  counter++;
+  var obj = document.getElementById("newObjective").value;
+  var ded = document.getElementById("newDeadline").value;
+  if(obj == "" || ded == "") {
+    alert("Objective text field is empty");
+  } else {
+    var newRow = jQuery('<tr><td><input type="text" name="first_name' +
+        counter + '"/></td><td><input type="text" name="last_name' +
+        counter + '"/></td></tr>');
+    jQuery('table.objectTable').append(newRow);
+    console.log("carried out");
+  }
+});
+   </script>
   <br>
   <br>
   <p>Current Objectives: </p>
@@ -41,7 +59,6 @@
     <tr>
       <td> Objective: </td>
       <td> Deadline: </td> 
-      <td></td>
     </tr>
      
   
