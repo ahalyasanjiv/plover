@@ -8,16 +8,19 @@
  * @param {function(string)} callback - called when the URL of the current tab
  *   is found.
  */
-function addObj() {
-	var obj = document.getElementById("newObjective").value;
-	var ded = document.getElementById("newDeadline").value;
-	if(obj == "" || ded == "") {
+ var counter = 1;
+jQuery('button.newGoal').click(function(event) {
+	event.preventDefault();
+	counter++;
+	//var obj = document.getElementById("newObjective").value;
+	//var ded = document.getElementById("newDeadline").value;
+	/*if(obj == "" || ded == "") {
 		alert("Objective text field is empty");
-	} else {
+	} else {*/
 		var newRow = jQuery('<tr><td><input type="text" name="first_name' +
         counter + '"/></td><td><input type="text" name="last_name' +
         counter + '"/></td></tr>');
     jQuery('table.objectTable').append(newRow);
 		
 	}
-}
+});
