@@ -8,8 +8,6 @@
   <head>
     <title>Plover</title>
     <link rel="stylesheet" type="popup.css" href="popup.css">
-    
-    <script type="text/javascript" src="jQuery.js"></script>
     <script type="text/javascript" src="popup.js"></script>
     
   </head>
@@ -33,14 +31,15 @@
   </table>
 
   <br>
-   <form action="" method="post"><button class="newGoal">New Goal</button> </form>
+   <button id="newGoal" onclick="addObj()">New Goal</button>
   <br>
   <br>
   <p>Current Objectives: </p>
   <table class="objectTable">  
     <tr>
       <td> Objective: </td>
-      <td> Deadline: </td> 
+      <td> Deadline: </td>
+      <br id="lifegiver">
     </tr>
      
   
@@ -50,7 +49,7 @@
    <br>
    <br>
   
-   <button class="start">Start</button>
+   <button id="start">Start</button>
  </form>
 
 
