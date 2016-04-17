@@ -21,6 +21,7 @@ jQuery('button.newGoal').click(function(event) {
         counter + '"/></td><td><input type="text" name="last_name' +
         counter + '"/></td></tr>');
     jQuery('table.objectTable').append(newRow);
+    console.log("carried out");
 		
-	}
+	
 });
