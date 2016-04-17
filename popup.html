@@ -44,9 +44,7 @@ jQuery('button.newGoal').click(function(event) {
   if(obj == "" || ded == "") {
     alert("Objective text field is empty");
   } else {
-    var newRow = jQuery('<tr><td><input type="text" name="first_name' +
-        counter + '"/></td><td><input type="text" name="last_name' +
-        counter + '"/></td></tr>');
+    var newRow = jQuery('<tr><td>'+obj+'</td><td>'+ded+'</td></tr>');
     jQuery('table.objectTable').append(newRow);
     console.log("carried out");
   }
