@@ -17,10 +17,11 @@ jQuery('button.newGoal').click(function(event) {
 	/*if(obj == "" || ded == "") {
 		alert("Objective text field is empty");
 	} else {*/
+		
 		var newRow = jQuery('<tr><td><input type="text" name="first_name' +
         counter + '"/></td><td><input type="text" name="last_name' +
         counter + '"/></td></tr>');
     jQuery('table.objectTable').append(newRow);
 		
-	}
+	//}
 });
