@@ -35,10 +35,8 @@
   <br>
    <form action="" method="post"><button class="newGoal">New Goal</button> </form>
    <script>
-    var counter = 1;
 jQuery('button.newGoal').click(function(event) {
   event.preventDefault();
-  counter++;
   var obj = document.getElementById("newObjective").value;
   var ded = document.getElementById("newDeadline").value;
   if(obj == "" || ded == "") {
