@@ -7,30 +7,21 @@
 <html>
   <head>
     <title>Plover</title>
-    <style>
-      body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: 24px;
-      }
-      button{
-         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: 24px;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-      }
-    </style>
-
-    <script src="popup.js"></script>
+    <link rel="stylesheet" type="popup.css" href="popup.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/popup.js"></script>
   </head>
   <body>
     <div id="status"></div>
     <img id="image-result" hidden>
+    <form>
+  Objective:<br>
+  <input type="text" name="newObjective" placeholder="New Objective"><br>
+  Deadline:<br><input type="text" name="newDeadline" placeholder="New Deadline">
+  </form>
     <button id="newGoal">New Goal</button>
+
   </body>
 </html>
 
