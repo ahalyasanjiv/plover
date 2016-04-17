@@ -10,9 +10,7 @@ button{
    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 12px;
 }
-input {
-  float:left;
-}
+
 #status {
   /* avoid an excessively wide status text */
   white-space: pre;
